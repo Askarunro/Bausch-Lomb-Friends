@@ -1,0 +1,29 @@
+.section-hero {
+  padding: 21px 19px;
+  color: $secondaryTextColor;
+  background-color: $headingColor;
+  &__heading {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.01;
+  }
+  &__text {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 260px;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.22;
+  }
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 182px;
+    height: 38px;
+    box-shadow: 0px 14px 24px rgba(0, 119, 126, 0.5);
+  }
+}
