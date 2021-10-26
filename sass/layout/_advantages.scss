@@ -2,22 +2,29 @@
   margin-bottom: 34px;
 }
 .section-advantages__list {
-  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
+  margin: -30px;
 }
 .section-advantages__item {
+  margin: 15px;
   width: 150px;
 }
 .section-advantages__box {
   margin-bottom: 11px;
-
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
   width: 80px;
   height: 80px;
   border: none;
   border-radius: 50%;
   background: linear-gradient(232.05deg, #ffdddf 23.86%, #55e1f4 73.65%);
   opacity: 0.2;
+}
+
+.section-advantages__icon {
+  fill: blue;
 }
 
 .section-advantages__heading {
@@ -30,6 +37,7 @@
 }
 
 .section-advantages__btn {
+  margin-top: 25px;
   width: 180px;
   padding: 17px;
   color: $secondaryTextColor;
