@@ -4,42 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- Шапка -->
     <header>
-      <a href=""><img src="" alt="" /></a>
+      <a href="" class="link-style"><img src="" alt="" /></a>
       <nav>
-        <ul>
-          <li><a href="">О компании</a></li>
-          <li><a href="">Наши преимущества</a></li>
-          <li><a href="">Копить баллы легко</a></li>
-          <li><a href="">На что потратить</a></li>
-          <li><a href="">Отзывы</a></li>
+        <ul class="list">
+          <li><a href="#about" class="link-style">О компании</a></li>
+          <li><a href="#advantages" class="link-style">Наши преимущества</a></li>
+          <li><a href="#accumulation" class="link-style">Копить баллы легко</a></li>
+          <li><a href="#spend" class="link-style">На что потратить</a></li>
+          <li><a href="#reviews" class="link-style">Отзывы</a></li>
         </ul>
       </nav>
       <button>Зарегистрироваться</button>
     </header>
     <main>
+      <!-- Герой -->
       <section class="section-hero">
         <h1>Bausch+Lomb Friends*</h1>
         <p>Приглашаем вас в Программу лояльности</p>
         <button>принять участие</button>
       </section>
-      <section class="about-us">
+      <!-- О бренде -->
+      <section class="about-us" id="about">
         <div class="container">
           <h2>О бренде Bausch+Lomb:</h2>
-          <ul>
+          <ul class="list">
             <li>Первый в мире производитель мягких контактных линз 1</li>
             <li>Первыми выпустили на рынок силикон-гидрогелевые линзы 2</li>
             <li>Бренд №1 среди растворов для линз</li>
           </ul>
         </div>
       </section>
-      <section class="section-ball">
+      <!-- Копить баллы легко -->
+      <section class="section-accumulation" id="accumulation">
         <div class="container">
           <h2>Копить баллы легко!</h2>
-          <ul>
+          <ul class="list">
             <li>
               <div>
                 <svg>
@@ -102,11 +113,12 @@
           <button>Начать копить баллы</button>
         </div>
       </section>
+      <!-- Как все устроено -->
       <section class="section-work">
         <div class="container">
           <h2>Как все устроено?</h2>
           <div>
-            <ul>
+            <ul class="list">
               <li></li>
               <li></li>
               <li></li>
@@ -116,10 +128,12 @@
           </div>
         </div>
       </section>
-      <section class="section-advantages">
+      <!--Наши преимущества  -->
+      <section class="section-advantages" id="advantages">
         <div class="container">
+          <h2>Наши преимущества</h2>
           <div>
-            <ul>
+            <ul class="list">
               <li>
                 <svg>
                   <use></use>
@@ -149,11 +163,12 @@
           <button>зарегистрироваться</button>
         </div>
       </section>
-      <section>
+      <!-- На что потратить -->
+      <section class="section-spend" id="spend">
         <div class="container">
           <h2>На что потратить</h2>
           <div class="slider">
-            <ul>
+            <ul class="list">
               <li>
                 <img src="" alt="" />
                 <h3>Бесплатная упаковка Biotrue ONEday*</h3>
@@ -193,10 +208,11 @@
           <button>зарегистрироваться</button>
         </div>
       </section>
-      <section class="section-reviews">
+      <!-- Отзывы -->
+      <section class="section-reviews" id="reviews">
         <h2>Отзывы наших участников</h2>
         <div class="slider">
-          <ul>
+          <ul class="list">
             <li>
               <h3>Александра Никитченко</h3>
               <h4>Менеджер</h4>
@@ -230,10 +246,12 @@
           </ul>
         </div>
       </section>
+      <!-- danger -->
       <section class="section-danger">
         <h2>Имеются противопоказания, необходимо проконсультироваться со специалистом</h2>
       </section>
     </main>
+    <!-- Footer -->
     <footer>
       <div class="logo">
         <svg>
@@ -241,7 +259,7 @@
         </svg>
       </div>
       <nav>
-        <ul>
+        <ul class="list">
           <li><a href="">Продукты</a></li>
           <li><a href="">События</a></li>
           <li><a href="">О компании</a></li>
@@ -267,7 +285,7 @@
         иное.
       </div>
       <h2>*FRIENDS (англ.) – друзья (рус.)</h2>
-      <ul>
+      <ul class="list">
         <li>
           ** В 1971 году компания Bausch & Lomb выпустила SofLens® — первые в мире мягкие контактные
           линзы.
