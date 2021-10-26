@@ -411,7 +411,6 @@ ul {
 }
 
 .section-advantages__list {
-  margin-bottom: 25px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -419,14 +418,19 @@ ul {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin: -30px;
 }
 
 .section-advantages__item {
+  margin: 15px;
   width: 150px;
 }
 
 .section-advantages__box {
   margin-bottom: 11px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
   width: 80px;
   height: 80px;
   border: none;
@@ -436,6 +440,10 @@ ul {
   background: -o-linear-gradient(217.95deg, #ffdddf 23.86%, #55e1f4 73.65%);
   background: linear-gradient(232.05deg, #ffdddf 23.86%, #55e1f4 73.65%);
   opacity: 0.2;
+}
+
+.section-advantages__icon {
+  fill: blue;
 }
 
 .section-advantages__heading {
@@ -448,6 +456,7 @@ ul {
 }
 
 .section-advantages__btn {
+  margin-top: 25px;
   width: 180px;
   padding: 17px;
   color: #ffffff;
