@@ -31,20 +31,19 @@ img {
 
 /* стилі для контейнерів */
 
-// .container {
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
 
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
 
-//   @media screen and (min-width: 480px) {
-//     max-width: 480px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     max-width: 1200px;
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
 
 /* Скидаю глобально зовнішні відступи  */
 
@@ -66,12 +65,21 @@ ul {
   padding: 0px;
 }
 
-// .section-advantages__title--hidden,
-// .section-portfolio__title--hidden {
-//   position: absolute;
+.hidden {
+  position: absolute;
 
-//   clip: rect(0 0 0 0);
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-// }
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.heading-primary {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: $headingColor;
+}
