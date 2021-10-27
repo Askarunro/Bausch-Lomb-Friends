@@ -1,8 +1,12 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: $primaryTextColor;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
+
   letter-spacing: 0.03em;
+  line-height: 1.1;
 
   // max-width: 480px;
 }
@@ -82,4 +86,8 @@ ul {
   text-align: center;
 
   color: $headingColor;
+
+  &-lighter {
+    color: $secondaryTextColor;
+  }
 }
