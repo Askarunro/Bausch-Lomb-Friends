@@ -1,0 +1,28 @@
+.section-accumulation {
+  display: flex;
+  justify-content: center;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__list {
+    width: 300px;
+  }
+  &__item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__caption {
+    margin-bottom: 10px;
+  }
+  &__btn {
+    width: 230px;
+    padding: 14px 33px;
+    background-color: $accentColor;
+    color: $secondaryTextColor;
+  }
+}
