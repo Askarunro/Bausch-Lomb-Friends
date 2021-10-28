@@ -805,6 +805,8 @@ ul {
 .section-work__timeline--position {
   position: absolute;
   top: 22px;
+  height: 800px;
+  padding: 0;
 }
 
 .section-work__title {
@@ -868,6 +870,55 @@ ul {
   position: absolute;
   left: -120px;
   fill: #43e3f9;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-work {
+    padding: 160px 233px 190px 210px;
+    max-height: 1635px;
+  }
+  .section-work__icon:nth-child(even) {
+    position: absolute;
+    left: -300px;
+    fill: #43e3f9;
+  }
+  .section-work__timeline {
+    position: relative;
+    width: 26px;
+  }
+  .section-work__timeline--position {
+    position: absolute;
+    top: -300px;
+    left: 140px;
+    height: 1500px;
+    padding: 0;
+  }
+  .section-work__item {
+    width: 416px;
+    margin-right: auto;
+    padding: 70px 29px 90px 135px;
+  }
+  .section-work__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .section-work__item:first-child {
+    padding-bottom: 90px;
+  }
+  .section-work__item:nth-child(odd) {
+    margin-left: 50%;
+  }
+  .section-work__item:nth-child(even) {
+    margin-left: -100%;
+  }
+  .section-work__item--style {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 1.2;
+    color: #43e3f9;
+  }
 }
 
 .arow {
