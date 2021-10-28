@@ -43,8 +43,8 @@ img {
   margin-right: auto;
   padding: 0 15px;
 
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
+  @media screen and (max-width: 1199px) {
+    max-width: 370px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -82,15 +82,17 @@ ul {
 }
 
 .heading-primary {
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   text-align: center;
 
   color: $headingColor;
 
-  &-lighter {
+  &.lighter {
     color: $secondaryTextColor;
   }
 }
