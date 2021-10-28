@@ -454,12 +454,6 @@ ul {
   display: none;
 }
 
-@media screen and (max-width: 1199px) {
-  .header-nav {
-    display: none;
-  }
-}
-
 .header-nav__link {
   color: #ffffff;
   -webkit-transition: font-weigh 250ms cubic-bezier(0.4, 0, 0.2, 1);
