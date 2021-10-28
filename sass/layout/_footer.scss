@@ -1,0 +1,91 @@
+.container--position {
+  justify-content: start;
+}
+
+.footer {
+  padding: 40px 25px 30px 35px;
+  background-image: url('..//images/svg/bg-footer.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $secondaryTextColor;
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &__links--position {
+    display: flex;
+  }
+  &__btn {
+    padding: 5px 10px;
+    margin-bottom: 13px;
+    background-color: $headingColor;
+    color: $secondaryTextColor;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: inherit;
+  }
+}
+
+.navigation {
+  &__list {
+    margin-bottom: 15px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.22;
+
+    color: $secondaryTextColor;
+  }
+}
+
+.link-loyalty {
+  display: block;
+  margin-bottom: 21px;
+  color: $secondaryTextColor;
+}
+.about-company {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+
+  &__text--uppercase {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__text--block {
+    @media screen and(max-width: 1199px) {
+      display: block;
+    }
+  }
+  &__list {
+    margin-top: 15px;
+  }
+  &__item {
+    margin-bottom: 12px;
+  }
+  &__license {
+    text-transform: uppercase;
+  }
+}
+
+.mobile-hidden {
+  @media screen and(max-width: 1199px) {
+    display: none;
+  }
+}
