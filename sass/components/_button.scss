@@ -5,8 +5,9 @@
   //   @include centeredFlex();
   margin-left: auto;
   margin-right: auto;
+  background-color: $secondaryTextColor;
 
   cursor: pointer;
-
+  text-transform: uppercase;
   transition: background-color 250ms $timingFunction;
 }
