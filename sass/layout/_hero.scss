@@ -2,14 +2,30 @@
   padding: 21px 19px;
   color: $secondaryTextColor;
   background-image: url('..//images/svg/bg-hero.svg');
-  &__heading {
+
+  &__title {
+    position: relative;
+    margin-bottom: 24px;
+    margin-left: 76px;
     font-size: 30px;
     font-weight: 800;
     line-height: 1.01;
   }
+  &__icon {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('..//images/svg/lens.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 67px;
+    left: -75px;
+  }
   &__text {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
 
     width: 260px;
     text-align: center;
@@ -25,5 +41,17 @@
     width: 182px;
     height: 38px;
     box-shadow: 0px 14px 24px rgba(0, 119, 126, 0.5);
+
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+
+    &--gradient {
+      background: linear-gradient(to right, #61c1d7 50%, #32a3c7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #0b2349;
+      // background: linear-gradient(to right, rgba(97, 193, 215, 1) 50%, rgba(50, 163, 199, 1));
+    }
   }
 }
