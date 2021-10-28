@@ -1,5 +1,5 @@
 .about-us {
-  padding: 80px 28px 70px 28px;
+  padding: 80px 0px 70px 0px;
   background-image: url('..//images/svg/bg-about.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,18 +7,19 @@
   &__title {
     margin-bottom: 25px;
     font-weight: 800;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
   }
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    width: 270px;
+    margin-left: auto;
   }
   &__item {
+    position: relative;
     &:not(:last-child) {
-      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
+  }
+  &__icon {
+    position: absolute;
+    left: -40px;
   }
 }
