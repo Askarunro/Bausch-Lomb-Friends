@@ -18,6 +18,9 @@
   }
   &__caption {
     margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
   }
   &__btn {
     width: 230px;
@@ -28,5 +31,28 @@
     font-weight: 800;
     font-size: 11px;
     line-height: 13px;
+  }
+  @media screen and(min-width:1200px) {
+    &__title {
+      margin-bottom: 75px;
+    }
+
+    &__list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      margin: -30px;
+    }
+    &__item {
+      width: 275px;
+      text-align: center;
+      margin: 15px;
+    }
+    &__btn {
+      width: 400px;
+      margin-top: 75px;
+    }
   }
 }
