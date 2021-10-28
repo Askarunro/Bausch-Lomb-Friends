@@ -1,0 +1,58 @@
+.section-spend {
+  padding: 60px 20px 40px 20px;
+  margin-bottom: 30px;
+
+  background-image: url('..//images/svg/bg-spend.svg');
+  //   background-size: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__title {
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $secondaryTextColor;
+  }
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 20px;
+    margin-bottom: 53px;
+    text-align: center;
+    background: linear-gradient(232.05deg, #ffe2e4 23.86%, #d8faff 73.65%);
+    box-shadow: 0px 4px 40px rgba(14, 117, 149, 0.22);
+    border-radius: 40px;
+  }
+  &__caption {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.47;
+    color: #004a62;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #0e7595;
+  }
+  &__picture {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 8px;
+    color: #0e7595;
+  }
+  &__btn {
+    padding: 14px 20px;
+    color: #0e7595;
+
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
