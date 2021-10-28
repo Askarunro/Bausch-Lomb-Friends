@@ -125,36 +125,63 @@
       </section>
       <!-- Как все устроено -->
       <section class="section-work">
-        <div class="container">
-          <h2 class="section-work__title heading-primary-lighter">Как все устроено?</h2>
+        <div class="container container--position">
+          <h2 class="section-work__title heading-primary lighter">Как все устроено?</h2>
           <div class="section-work__box">
             <div class="section-work__timeline">
-              <svg width="26" height="800">
+              <svg class="section-work__timeline--position" width="26" height="800">
                 <use href="./images/svg/sprite.svg#timeline-work"></use>
               </svg>
             </div>
 
             <ul class="section-work__list list">
-              <li class="section-work__item"><p>Приобретите продукт со стикером на упаковке</p></li>
               <li class="section-work__item">
+                <svg class="section-work__icon" width="63" height="63">
+                  <use href="./images/svg/sprite.svg#icon-work1"></use>
+                </svg>
+                <span class="arow"></span>
+                <span class="section-work__item--style">1</span>
+                <p>Приобретите продукт со стикером на упаковке</p>
+              </li>
+              <li class="section-work__item">
+                <svg class="section-work__icon" width="63" height="63">
+                  <use href="./images/svg/sprite.svg#icon-work2"></use>
+                </svg>
+                <span class="arow"></span>
+                <span class="section-work__item--style">2</span>
                 <p class="section-work__text">
                   Войдите в личный кабинет на сайте Ultralinzi.ru и введите код со стикера в
                   специальном окне. Баллы зачислятся мгновенно
                 </p>
               </li>
               <li class="section-work__item">
+                <svg class="section-work__icon" width="63" height="63">
+                  <use href="./images/svg/sprite.svg#icon-work3"></use>
+                </svg>
+                <span class="arow"></span>
+                <span class="section-work__item--style">3</span>
                 <p class="section-work__text">
                   Принимайте участие в наших акциях и мероприятиях, копите баллы, обменивайте их на
                   продукцию Bausch+Lomb или на другие предложения от наших партнеров
                 </p>
               </li>
               <li class="section-work__item">
+                <svg class="section-work__icon" width="63" height="63">
+                  <use href="./images/svg/sprite.svg#icon-work4"></use>
+                </svg>
+                <span class="arow"></span>
+                <span class="section-work__item--style">4</span>
                 <p class="section-work__text">
                   Накопили баллы на вознаграждение? Закажите его легко и быстро, всего в несколько
                   кликов
                 </p>
               </li>
               <li class="section-work__item">
+                <svg class="section-work__icon" width="63" height="63">
+                  <use href="./images/svg/sprite.svg#icon-work5"></use>
+                </svg>
+                <span class="arow"></span>
+                <span class="section-work__item--style">5</span>
                 <p class="section-work__text">
                   Мы развиваем нашу Программу лояльности, чтобы вы могли получить еще больше
                   привилегий. Давайте дружить долго и крепко :)
@@ -166,7 +193,7 @@
       </section>
       <!-- Копить баллы легко -->
       <section class="section-accumulation" id="accumulation">
-        <div class="container">
+        <div class="container container--position">
           <h2 class="section-accumulation__title heading-primary">Копить баллы легко!</h2>
           <ul class="section-accumulation__list list">
             <li class="section-accumulation__item">
@@ -240,7 +267,7 @@
       <!-- На что потратить -->
       <section class="section-spend" id="spend">
         <div class="container">
-          <h2 class="section-spend__title">На что потратить</h2>
+          <h2 class="section-spend__title heading-primary lighter">На что потратить</h2>
           <div class="slider">
             <ul class="section-spend__list list">
               <li class="section-spend__item">
@@ -310,7 +337,7 @@
       </section>
       <!-- Отзывы -->
       <section class="section-reviews" id="reviews">
-        <h2 class="section-reviews__title">Отзывы наших участников</h2>
+        <h2 class="section-reviews__title heading-primary">Отзывы наших участников</h2>
         <div class="slider">
           <ul class="section-reviews__list list">
             <li class="section-reviews__item">
@@ -349,11 +376,26 @@
       <!-- О бренде -->
       <section class="about-us" id="about">
         <div class="container">
-          <h2 class="about-us__title">О бренде Bausch+Lomb:</h2>
+          <h2 class="about-us__title heading-primary lighter">О бренде Bausch+Lomb:</h2>
           <ul class="about-us__list list">
-            <li class="about-us__item">Первый в мире производитель мягких контактных линз 1</li>
-            <li class="about-us__item">Первыми выпустили на рынок силикон-гидрогелевые линзы 2</li>
-            <li class="about-us__item">Бренд №1 среди растворов для линз</li>
+            <li class="about-us__item">
+              <svg class="about-us__icon" width="28" height="27">
+                <use href="./images/svg/sprite.svg#Ok"></use>
+              </svg>
+              <p>Первый в мире производитель мягких контактных линз 1</p>
+            </li>
+            <li class="about-us__item">
+              <svg class="about-us__icon" width="28" height="27">
+                <use href="./images/svg/sprite.svg#Ok"></use>
+              </svg>
+              <p>Первыми выпустили на рынок силикон-гидрогелевые линзы 2</p>
+            </li>
+            <li class="about-us__item">
+              <svg class="about-us__icon" width="28" height="27">
+                <use href="./images/svg/sprite.svg#Ok"></use>
+              </svg>
+              <p>Бренд №1 среди растворов для линз</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -380,7 +422,7 @@
             </svg>
           </div>
         </div>
-        <div class="container--position">
+        <div class="navigation--box">
           <nav class="navigation">
             <ul class="navigation__list list">
               <li class="navigation__item">
