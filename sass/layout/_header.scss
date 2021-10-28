@@ -5,19 +5,110 @@
 .header-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .menu-button {
-  //   display: inline-flex;
-  //   z-index: 3;
-  //   margin: 0;
-  //   padding: 0;
-  //   border: none;
-  //   background-color: transparent;
+  display: inline-flex;
+  z-index: 3;
+  margin-left: 25px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   & .icon-menu {
     display: block;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: none;
+  }
+}
+
+.menu-button {
+  transition: fill 250ms $timingFunction;
+}
+
+.icon-cross:hover,
+.icon-cross:focus,
+.icon-menu:hover,
+.icon-menu:focus {
+  fill: $headingColor;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+  position: absolute;
+  right: 10px;
+  // margin-right: 50px;
+}
+
+.menu-button.is-open {
+  position: absolute;
+  right: 0%;
+  top: 35px;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.header-nav {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+  }
+
+  &.is-open {
+    @media screen and (max-width: 1199px) {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      z-index: 2;
+      top: -16px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 370px;
+      padding: 30px 18px;
+      background-color: $accentColor;
+      border: none;
+
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+    & .header-nav__link {
+      color: $secondaryTextColor;
+      transition: font-weigh 250ms $timingFunction;
+      &:hover,
+      &:focus {
+        font-weight: 900;
+      }
+    }
+    & .header-nav__list {
+      padding-top: 78px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    & .header-nav__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    & .header-nav__btn {
+      padding: 12px 9px;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 1.18;
+      color: $accentColor;
+      text-transform: uppercase;
+    }
+    & .header-nav__logo {
+      position: absolute;
+      left: 18px;
+      margin-top: 14px;
+    }
   }
 }
