@@ -50,4 +50,35 @@
     font-size: 11px;
     line-height: 13px;
   }
+  @media screen and(min-width:1200px) {
+    padding: 150px 400px 120px 300px;
+    &__list {
+      position: relative;
+    }
+    &__item {
+      display: flex;
+      position: relative;
+      width: 700px;
+      // height: 380px;
+      padding: 15px 20px;
+      margin-bottom: 53px;
+    }
+    &__btn {
+      width: 400px;
+    }
+    &__caption {
+      font-size: 26px;
+    }
+    &__text {
+      font-weight: 600;
+      font-size: 21px;
+      color: #950e5f;
+    }
+    &__subtitle {
+      font-size: 21px;
+    }
+    &__picture {
+      // margin-right: -50%;
+    }
+  }
 }

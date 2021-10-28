@@ -1091,6 +1091,39 @@ ul {
   line-height: 13px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-spend {
+    padding: 150px 400px 120px 300px;
+  }
+  .section-spend__list {
+    position: relative;
+  }
+  .section-spend__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 700px;
+    padding: 15px 20px;
+    margin-bottom: 53px;
+  }
+  .section-spend__btn {
+    width: 400px;
+  }
+  .section-spend__caption {
+    font-size: 26px;
+  }
+  .section-spend__text {
+    font-weight: 600;
+    font-size: 21px;
+    color: #950e5f;
+  }
+  .section-spend__subtitle {
+    font-size: 21px;
+  }
+}
+
 .section-reviews {
   padding: 30px 40px 70px 40px;
 }
