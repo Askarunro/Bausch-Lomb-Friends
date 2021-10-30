@@ -22,4 +22,60 @@
     position: absolute;
     left: -40px;
   }
+  &__text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  @media screen and(min-width:1200px) {
+    padding: 115px 0px 70px 0px;
+    position: relative;
+    height: 400px;
+    background-image: url('..//images/svg/bg-about-us-desk.svg');
+    background-position-x: 150px;
+    // background-position-y: -50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &__container {
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 35px;
+      line-height: 1.2;
+    }
+    &__list {
+      width: 100%;
+      margin: 0;
+      padding-left: 275px;
+      margin-right: auto;
+    }
+    &__item {
+      //  margin-left: 200px;
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+      &:first-child {
+        margin-left: -75px;
+      }
+      &:last-child {
+        margin-left: 75px;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      left: -60px;
+      width: 45px;
+      height: 45px;
+    }
+    &__text {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 1.2;
+      &--sup {
+        vertical-align: super;
+      }
+    }
+  }
 }
