@@ -60,6 +60,9 @@
     z-index: 15;
     display: flex;
     bottom: 30px;
+    @media screen and(min-width:1200px) {
+      display: none;
+    }
   }
 
   & .slick-dots li {
@@ -86,6 +89,9 @@
     border-radius: 5px;
     background-image: url(/images/svg/Ellipse.svg);
     background-repeat: no-repeat;
+    @media screen and(min-width:1200px) {
+      display: none;
+    }
   }
   & .slick-dots li.slick-active button {
     background-color: $secondaryTextColor;
@@ -98,9 +104,53 @@
     background-image: url(/images/svg/Ellipse.svg);
     background-repeat: no-repeat;
   }
+  & .slick-arrow {
+    display: none;
+
+    @media screen and(min-width:1200px) {
+      position: absolute;
+      top: 50%;
+      font-size: 0;
+      width: 146px;
+      height: 146px;
+      border: none;
+      border-radius: 50%;
+      background-color: #30e0e9;
+    }
+  }
+  /* Стрелка влево */
+  & .slick-arrow.slick-prev {
+    left: -180px;
+
+    background-image: url(/images/svg/Vector1.svg);
+    background-repeat: no-repeat;
+    background-size: 34px 74px;
+    background-position: center;
+    transition: transform, $timingFunction;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.25);
+    }
+  }
+  /* Стрелка вправо */
+  & .slick-arrow.slick-next {
+    right: -280px;
+
+    background-image: url(/images/svg/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 34px 74px;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.25);
+    }
+  }
 }
 
 .slider {
+  position: relative;
   /* Стрелка */
   & .slick-arrow {
   }
