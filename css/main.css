@@ -1429,6 +1429,8 @@ ul {
 
 .slider-spend {
   position: relative;
+  /* Стрелка влево */
+  /* Стрелка вправо */
 }
 
 .slider-spend .slick-track {
@@ -1531,6 +1533,12 @@ ul {
   bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .slider-spend .slick-dots {
+    display: none;
+  }
+}
+
 .slider-spend .slick-dots li {
   list-style: none;
   margin: 0px 11px;
@@ -1557,6 +1565,12 @@ ul {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1200px) {
+  .slider-spend .slick-dots button {
+    display: none;
+  }
+}
+
 .slider-spend .slick-dots li.slick-active button {
   background-color: #ffffff;
   opacity: 0.7;
@@ -1569,7 +1583,63 @@ ul {
   background-repeat: no-repeat;
 }
 
+.slider-spend .slick-arrow {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .slider-spend .slick-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    width: 146px;
+    height: 146px;
+    border: none;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #30e0e9;
+  }
+}
+
+.slider-spend .slick-arrow.slick-prev {
+  left: -180px;
+  background-image: url(/images/svg/Vector1.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 34px 74px;
+          background-size: 34px 74px;
+  background-position: center;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+  transition: cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+  -o-transition: transform, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform, cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+}
+
+.slider-spend .slick-arrow.slick-prev:hover, .slider-spend .slick-arrow.slick-prev:focus {
+  cursor: pointer;
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.slider-spend .slick-arrow.slick-next {
+  right: -280px;
+  background-image: url(/images/svg/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 34px 74px;
+          background-size: 34px 74px;
+}
+
+.slider-spend .slick-arrow.slick-next:hover, .slider-spend .slick-arrow.slick-next:focus {
+  cursor: pointer;
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
 .slider {
+  position: relative;
   /* Стрелка */
   /* Стрелка влево */
   /* Стрелка вправо */
