@@ -5,10 +5,7 @@
 
     color: $headingColor;
   }
-  &__list {
-    display: flex;
-    justify-content: center;
-  }
+
   &__item {
     display: flex;
     flex-wrap: wrap;
@@ -52,4 +49,9 @@
     font-size: 11px;
     line-height: 13px;
   }
+}
+.slider {
+  // display: flex;
+  // justify-content: center;
+  min-width: 0;
 }

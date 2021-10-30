@@ -41,6 +41,9 @@
     font-weight: 600;
     font-size: 8px;
     color: #0e7595;
+    & .hidden {
+      display: none;
+    }
   }
   &__btn {
     padding: 14px 20px;
