@@ -106,6 +106,12 @@
   }
   & .slick-arrow {
     display: none;
+    position: absolute;
+
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 
     @media screen and(min-width:1200px) {
       position: absolute;
@@ -151,15 +157,158 @@
 
 .slider {
   position: relative;
-  /* Стрелка */
+
+  & .slick-track {
+    transform: translate3d(0px, 0px, 0px) !important;
+    width: inherit !important;
+  }
+
+  & .slick-slide {
+    display: none;
+    animation-name: changeBgColor1;
+    animation-duration: 500ms;
+    animation-timing-function: $primary-animation;
+    animation-iteration-count: 1;
+
+    // animation-name: changeBgColor;
+    // animation-duration: 500ms;
+    // animation-timing-function: $primary-animation;
+    // animation-iteration-count: 1;
+  }
+
+  & .slick-slide.slick-active {
+    @keyframes changeBgColor1 {
+      0% {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(300%);
+        opacity: 0;
+      }
+    }
+    display: block;
+    animation-name: changeBgColor;
+    animation-duration: 500ms;
+    animation-timing-function: $primary-animation;
+    animation-iteration-count: 1;
+    @keyframes changeBgColor {
+      0% {
+        transform: translateX(-300%);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+    }
+  }
+
+  & .slick-slide.slick-cloned {
+    display: none;
+  }
+
+  & .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55%);
+    z-index: 15;
+    display: flex;
+    bottom: -20px;
+    @media screen and(min-width:1200px) {
+      display: none;
+    }
+  }
+
+  & .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+
+  & .slick-dots button {
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    background-color: #eefeff;
+    opacity: 0.3;
+    border: none;
+
+    z-index: 10;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    // border-radius: 5px;
+    background-image: url(/images/svg/Line1.svg);
+    background-repeat: no-repeat;
+    @media screen and(min-width:1200px) {
+      display: none;
+    }
+  }
+  & .slick-dots li.slick-active button {
+    background-color: $secondaryTextColor;
+    opacity: 0.7;
+    top: 100%;
+    border: none;
+    font-size: 0;
+    width: 30px;
+    height: 15px;
+    background-image: url(/images/svg/Line2.svg);
+    background-repeat: no-repeat;
+  }
   & .slick-arrow {
+    display: none;
+    position: absolute;
+
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+
+    @media screen and(min-width:1200px) {
+      position: absolute;
+      top: 50%;
+      font-size: 0;
+      width: 146px;
+      height: 146px;
+      border: none;
+      border-radius: 50%;
+      background-color: #30e0e9;
+    }
   }
   /* Стрелка влево */
-  &.slick-arrow.slick-prev {
+  & .slick-arrow.slick-prev {
+    left: -180px;
+
+    background-image: url(/images/svg/Vector1.svg);
+    background-repeat: no-repeat;
+    background-size: 34px 74px;
+    background-position: center;
+    transition: transform, $timingFunction;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.25);
+    }
   }
   /* Стрелка вправо */
   & .slick-arrow.slick-next {
-    width: 150px;
+    right: -280px;
+
+    background-image: url(/images/svg/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 34px 74px;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.25);
+    }
   }
 }
 
