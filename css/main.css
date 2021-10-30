@@ -1261,6 +1261,68 @@ ul {
   left: -40px;
 }
 
+.about-us__text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding: 115px 0px 70px 0px;
+    position: relative;
+    height: 400px;
+    background-image: url("..//images/svg/bg-about-us-desk.svg");
+    background-position-x: 150px;
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .about-us__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-us__title {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+  .about-us__list {
+    width: 100%;
+    margin: 0;
+    padding-left: 275px;
+    margin-right: auto;
+  }
+  .about-us__item {
+    position: relative;
+  }
+  .about-us__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .about-us__item:first-child {
+    margin-left: -75px;
+  }
+  .about-us__item:last-child {
+    margin-left: 75px;
+  }
+  .about-us__icon {
+    position: absolute;
+    left: -60px;
+    width: 45px;
+    height: 45px;
+  }
+  .about-us__text {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .about-us__text--sup {
+    vertical-align: super;
+  }
+}
+
 .footer {
   padding: 40px 25px 30px 35px;
   background-image: url("..//images/svg/bg-footer.svg");
