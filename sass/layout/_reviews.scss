@@ -8,12 +8,17 @@
 
   &__item {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     max-width: 290px;
     padding: 50px 12px 30px 12px;
     box-shadow: 0px 4px 20px rgba(130, 154, 155, 0.23);
     border-radius: 30px;
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 33px;
+      }
+    }
   }
   &__caption {
     margin-bottom: 10px;
@@ -43,11 +48,17 @@
     padding: 14px 21px;
     background-color: $accentColor;
     color: $secondaryTextColor;
-    box-shadow: 0px 14px 24px rgba(0, 216, 228, 0.5);
+
     border-radius: 25px;
     font-weight: 500;
     font-size: 11px;
     line-height: 13px;
+    transition: box-shadow, $timingFunction;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 14px 24px rgba(0, 216, 228, 0.5);
+    }
   }
 }
 .slider {
