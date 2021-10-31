@@ -1353,7 +1353,7 @@ ul {
 
 .footer {
   margin-top: -60px;
-  padding: 40px 25px 30px 35px;
+  padding: 40px 5px 30px 5px;
   background-image: url("..//images/svg/bg-footer.svg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -1374,13 +1374,11 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px;
-  margin-left: 0;
-  margin-right: 28px;
+  margin: 0 28px 15px 0;
+  width: 213px;
 }
 
 .footer__web--position {
-  width: 70px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1389,6 +1387,8 @@ ul {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: -10px;
+  width: 70px;
 }
 
 .footer__btn {
@@ -1425,6 +1425,10 @@ ul {
     top: 110px;
     right: 300px;
     width: 80px;
+  }
+  .footer__icon {
+    width: 35px;
+    height: 35px;
   }
   .footer__btn {
     background-color: #00d8e4;
