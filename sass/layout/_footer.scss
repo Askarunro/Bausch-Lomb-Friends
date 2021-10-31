@@ -3,7 +3,7 @@
   margin-top: -60px;
   // left: calc(50% - (50% / 2));
 
-  padding: 40px 25px 30px 35px;
+  padding: 40px 5px 30px 5px;
   background-image: url('..//images/svg/bg-footer.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,14 +13,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-    margin-left: 0;
-    margin-right: 28px;
+
+    margin: 0 28px 15px 0;
+
+    width: 213px;
   }
   &__web--position {
-    width: 70px;
     display: flex;
     justify-content: space-between;
+
+    margin-top: -10px;
+
+    width: 70px;
   }
   &__btn {
     padding: 5px 10px;
@@ -53,6 +57,10 @@
       right: 300px;
 
       width: 80px;
+    }
+    &__icon {
+      width: 35px;
+      height: 35px;
     }
     &__btn {
       background-color: $accentColor;
