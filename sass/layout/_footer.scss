@@ -1,4 +1,8 @@
 .footer {
+  // position: absolute;
+  margin-top: -60px;
+  // left: calc(50% - (50% / 2));
+
   padding: 40px 25px 30px 35px;
   background-image: url('..//images/svg/bg-footer.svg');
   background-repeat: no-repeat;
@@ -11,10 +15,12 @@
     align-items: center;
     margin-bottom: 15px;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 28px;
   }
-  &__links--position {
+  &__web--position {
+    width: 70px;
     display: flex;
+    justify-content: space-between;
   }
   &__btn {
     padding: 5px 10px;
@@ -29,6 +35,42 @@
     line-height: 1.22;
     text-align: center;
     text-transform: inherit;
+  }
+  @media screen and(min-width:1200px) {
+    position: relative;
+    padding: 70px 300px 70px 200px;
+    background-image: url('..//images/svg/bg-footer-desk.svg');
+    &__logo {
+      margin-right: 93px;
+      margin-bottom: 30px;
+
+      width: 150px;
+      height: 12px;
+    }
+    &__web--position {
+      position: absolute;
+      top: 110px;
+      right: 300px;
+
+      width: 80px;
+    }
+    &__btn {
+      background-color: $accentColor;
+      margin: 0px;
+      margin-right: 30px;
+      padding: 6px 28px;
+
+      font-size: 12px;
+    }
+    &__box--position {
+      position: relative;
+    }
+    &__roles {
+      display: flex;
+      justify-content: start;
+      align-items: baseline;
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -47,6 +89,32 @@
     line-height: 1.22;
 
     color: $secondaryTextColor;
+
+    @media screen and(max-width:1199px) {
+      transition: transform, $primary-animation;
+
+      &:hover,
+      &:focus {
+        display: block;
+        transform: translateX(20px);
+      }
+    }
+  }
+  @media screen and(min-width:1200px) {
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      margin: 0px;
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+
+    &__link {
+      font-size: 12px;
+    }
   }
 }
 
@@ -54,6 +122,14 @@
   display: block;
   margin-bottom: 21px;
   color: $secondaryTextColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  text-decoration-line: underline;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
 }
 .about-company {
   font-weight: 500;
@@ -77,6 +153,14 @@
   }
   &__license {
     text-transform: uppercase;
+  }
+
+  @media screen and(min-width:1200px) {
+    &__list {
+      font-size: 14px;
+      line-height: 1.22;
+      margin-bottom: 30px;
+    }
   }
 }
 
