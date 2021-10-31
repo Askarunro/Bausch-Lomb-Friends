@@ -3,13 +3,16 @@
   //   const mobileMenuRef = document.querySelector('[data-menu]');
   //   menuBtnRef.addEventListener('click', () => {
   //     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
   //     menuBtnRef.classList.toggle('is-open');
   //     menuBtnRef.setAttribute('aria-expanded', !expanded);
-
   //     mobileMenuRef.classList.toggle('is-open');
   // }
   // );
-  const sectionAll = document.querySelectorAll('.sectionJs');
-  console.log(sectionAll);
+  //   const sectionAll = document.querySelectorAll('.sectionJs');
+  //   console.log(sectionAll);
+  //   //   const a = Array.from(sectionAll);
+  //   //   console.log(a);
+  //   const a = [...sectionAll];
+  //   console.log(a);
+  //   const b = a;
 })();
