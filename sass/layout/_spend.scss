@@ -54,12 +54,14 @@
   }
   @media screen and(min-width:1200px) {
     padding: 150px 400px 120px 300px;
+    display: flex;
+    justify-content: center;
     &__list {
       position: relative;
     }
     &__item {
-      display: flex;
       position: relative;
+      display: flex;
       width: 700px;
       // height: 380px;
       padding: 15px 20px;
