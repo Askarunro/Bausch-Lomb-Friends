@@ -62,7 +62,9 @@
               <a href="#reviews" class="header-nav__link link-style">Отзывы</a>
             </li>
           </ul>
-          <button type="button" class="header-nav__btn btn">Зарегистрироваться</button>
+          <button type="button" class="header-nav__btn btn" data-modal-open>
+            Зарегистрироваться
+          </button>
         </nav>
       </div>
     </header>
@@ -120,7 +122,9 @@
             </li>
           </ul>
 
-          <button type="button" class="btn section-advantages__btn">зарегистрироваться</button>
+          <button type="button" class="btn section-advantages__btn" data-modal-open>
+            зарегистрироваться
+          </button>
         </div>
       </section>
       <!-- Как все устроено -->
@@ -618,10 +622,10 @@
       </div>
     </footer>
     <div class="backdrop backdrop--hidden" data-modal>
-      <!-- <div class="modal">
+      <div class="modal">
         <button data-modal-close type="button" class="btn-close">
           <svg class="btn-close__icon" width="11" height="11">
-            <use href="./images/sprite.svg#close"></use>
+            <use href="./images/svg/sprite.svg#close"></use>
           </svg>
         </button>
         <b class="modal__legend">Оставьте свои данные, мы вам перезвоним</b>
@@ -631,7 +635,7 @@
             <div class="form-modal__thumb">
               <input type="text" name="text" id="inp-name" class="field" required />
               <svg class="field__icon" width="18" height="18">
-                <use href="./images/sprite.svg#input-name"></use>
+                <use href="./images/svg/sprite.svg#input-name"></use>
               </svg>
             </div>
           </div>
@@ -640,7 +644,7 @@
             <div class="form-modal__thumb">
               <input type="tel" name="tel" id="inp-tel" class="field" required />
               <svg class="field__icon" width="18" height="18">
-                <use href="./images/sprite.svg#input-tel"></use>
+                <use href="./images/svg/sprite.svg#input-tel"></use>
               </svg>
             </div>
           </div>
@@ -649,7 +653,7 @@
             <div class="form-modal__thumb">
               <input type="email" name="email" id="inp-mail" class="field" required />
               <svg class="field__icon" width="18" height="18">
-                <use href="./images/sprite.svg#input-mail"></use>
+                <use href="./images/svg/sprite.svg#input-mail"></use>
               </svg>
             </div>
           </div>
@@ -684,7 +688,7 @@
           </div>
           <button type="submit" class="btn-submit btn">Отправить</button>
         </form>
-      </div> -->
+      </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/headerMenu.js"></script>
