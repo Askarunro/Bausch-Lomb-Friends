@@ -1,19 +1,25 @@
 .about-us {
-  padding: 80px 0px 70px 0px;
+  padding: 80px 0px 100px 0px;
   background-image: url('..//images/svg/bg-about.svg');
   background-repeat: no-repeat;
   background-size: cover;
   color: $secondaryTextColor;
+
   &__title {
     margin-bottom: 25px;
     font-weight: 800;
   }
   &__list {
-    width: 270px;
-    margin-left: auto;
+    // display: flex;
+
+    // width: 270px;
+    // margin-left: 20px;
+    padding-left: 30px;
   }
   &__item {
     position: relative;
+    display: flex;
+    align-items: center;
     &:not(:last-child) {
       margin-bottom: 10px;
     }
