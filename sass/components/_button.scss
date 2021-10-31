@@ -9,5 +9,9 @@
 
   cursor: pointer;
   text-transform: uppercase;
-  transition: background-color 250ms $timingFunction;
+  transition: transform 250ms $timingFunction;
+  &:hover,
+  &:focus {
+    transform: scale(1.25);
+  }
 }
