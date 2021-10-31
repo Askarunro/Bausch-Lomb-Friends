@@ -1148,16 +1148,24 @@ ul {
 @media screen and (min-width: 1200px) {
   .section-spend {
     padding: 150px 400px 120px 300px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .section-spend__list {
     position: relative;
   }
   .section-spend__item {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
     width: 700px;
     padding: 15px 20px;
     margin-bottom: 53px;
