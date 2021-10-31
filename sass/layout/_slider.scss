@@ -115,6 +115,11 @@
 
     @media screen and(min-width:1200px) {
       position: absolute;
+      clip: inherit;
+      width: 0px;
+      height: 0px;
+      margin: 0;
+
       top: 50%;
       font-size: 0;
       width: 146px;
@@ -154,13 +159,24 @@
     }
   }
 }
-
+// R E V I E W S
 .slider {
   position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
   & .slick-track {
     transform: translate3d(0px, 0px, 0px) !important;
     width: inherit !important;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+
+      max-width: 1200px;
+    }
   }
 
   & .slick-slide {
@@ -174,6 +190,11 @@
     // animation-duration: 500ms;
     // animation-timing-function: $primary-animation;
     // animation-iteration-count: 1;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+
+      // max-width: 1200px;
+    }
   }
 
   & .slick-slide.slick-active {
