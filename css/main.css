@@ -1853,7 +1853,7 @@ ul {
 
 .slider-spend .slick-arrow.slick-prev {
   left: -180px;
-  background-image: url(./images/svg/Vector1.svg);
+  background-image: url(../images/svg/Vector1.svg);
   background-repeat: no-repeat;
   -webkit-background-size: 34px 74px;
           background-size: 34px 74px;
@@ -1875,7 +1875,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .slider-spend .slick-arrow.slick-next {
     right: -280px;
-    background-image: url(./images/svg/Vector.svg);
+    background-image: url(../images/svg/Vector.svg);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: 34px 74px;
@@ -2040,7 +2040,7 @@ ul {
   font-size: 0;
   width: 15px;
   height: 15px;
-  background-image: url(./images/svg/Line1.svg);
+  background-image: url(../images/svg/Line1.svg);
   background-repeat: no-repeat;
 }
 
@@ -2058,7 +2058,7 @@ ul {
   font-size: 0;
   width: 30px;
   height: 15px;
-  background-image: url(./images/svg/Line2.svg);
+  background-image: url(../images/svg/Line2.svg);
   background-repeat: no-repeat;
 }
 
