@@ -885,6 +885,12 @@ ul {
   border: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .container--position {
+    position: relative;
+  }
+}
+
 .section-work {
   padding: 100px 0px 40px 0px;
   margin-bottom: 30px;
@@ -985,10 +991,11 @@ ul {
     padding: 160px 233px 190px 210px;
     max-height: 1635px;
   }
-  .section-work__icon:nth-child(even) {
+  .section-work__icon {
     position: absolute;
-    left: -300px;
-    fill: #43e3f9;
+    left: 0;
+    width: 174px;
+    height: 174px;
   }
   .section-work__timeline {
     position: relative;
@@ -996,7 +1003,7 @@ ul {
   }
   .section-work__timeline--position {
     position: absolute;
-    top: -300px;
+    top: -0px;
     left: 140px;
     height: 1500px;
     padding: 0;
@@ -1038,6 +1045,20 @@ ul {
   left: -5px;
   top: 35px;
   background: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-left {
+    left: -500px;
+    top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-right {
+    left: 700px;
+    top: 0px;
+  }
 }
 
 .section-accumulation {
