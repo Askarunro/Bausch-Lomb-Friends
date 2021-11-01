@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: flex-end;
   border: 0;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
 }
 
 .section-work {
@@ -79,18 +82,23 @@
     padding: 160px 233px 190px 210px;
     max-height: 1635px;
     &__icon {
-      &:nth-child(even) {
-        position: absolute;
-        left: -300px;
-        fill: #43e3f9;
-      }
+      position: absolute;
+      left: 0;
+      width: 174px;
+      height: 174px;
+      // &:nth-child(even) {
+      //   position: absolute;
+      //   left: -300px;
+      //   fill: #43e3f9;
+      // }
     }
     &__timeline {
       position: relative;
       width: 26px;
+
       &--position {
         position: absolute;
-        top: -300px;
+        top: -0px;
         left: 140px;
         height: 1500px;
         padding: 0;
@@ -102,6 +110,7 @@
       // flex-wrap: wrap;
     }
     &__item {
+      // position: inherit;
       width: 416px;
       margin-right: auto;
       padding: 70px 29px 90px 135px;
@@ -140,4 +149,17 @@
   left: -5px;
   top: 35px;
   background: white;
+}
+
+.icon-left {
+  @media screen and (min-width: 1200px) {
+    left: -500px;
+    top: 0px;
+  }
+}
+.icon-right {
+  @media screen and (min-width: 1200px) {
+    left: 700px;
+    top: 0px;
+  }
 }
